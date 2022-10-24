@@ -11,4 +11,4 @@
 * Quiere que en una tabla aparezca los pedidos que se realizo con los datos del formularion.
 * la pagina debe contener informacion de la pasteria que es direccion, telefono y horarios de atencion.
 
-#### [Esqueleto de mi pagina](https://alexgeovanni.github.io/Launch-X-Latam/Fron-end/Html/Practica_Pastelera/Index_cliente.html)
+#### [Esqueleto pagina pasteleria cliente](https://alexgeovanni.github.io/Launch-X-Latam/Fron-end/Html/Practica_Pastelera/Index_cliente.html)
