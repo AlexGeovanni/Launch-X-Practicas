@@ -91,28 +91,27 @@ ul li:hover{
 
 .Inicio>div a p{
     font-size: calc(1.2rem*1.2);
-    width: 70%;
     margin: auto;
-    background-color: #ffff;
     border-radius: 100px;
     padding: 20px 0;
     color: #000;
-    transition: background-color .6s ease-out ;
 }
 .Inicio>div a{
     text-decoration: none;
     font-weight: 600;
 }
-.Inicio>div p:hover{
-    background-color: #000;
-    color: #ffff;
-}
+
 .buton{
     animation-name: mover;
     animation-duration: .7s;
-    animation-iteration-count: 5;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    background-color: #ffff;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 100px;
+    transition: background-color .6s ease-out ;
 }
 @keyframes mover {
     0%{
@@ -125,8 +124,12 @@ ul li:hover{
 .buton:hover{
     animation:none;
     transition: animation .7s ease;
+    background-color: #000;
+    transition: background-color .6s ease-out ;
 }
-
+.buton:hover>a p{
+    color: #ffff;
+}
 
 
 
