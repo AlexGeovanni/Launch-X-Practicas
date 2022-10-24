@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Lo for apuntan al id del input de cualquier otra cosa -->
+    <label for="">Ejemplo de tipo text</label><br> 
+    <input type="text" name="nombre" id="nombre" placeholder="nombre">
+    <br><br>
+    <hr>
+
+    <h2>Input de text tipos</h2>
+    <label for="correo">correo</label>
+    <input type="email" name="correo" id="correo"><br><br>
+
+    <label for="numero1">numeros</label>
+    <input type="number" name="numero1" id="numero1" min="0" max="100" ><br><br>
+
+    <label for="passw">password</label>
+    <input type="password" name="passw" id="passw"><br><br>
+
+    <label for="telfono">Telefono</label>
+    <input type="tel" name="telefono" id="telefono" maxlength="10"><br><br>
+
+    <label for="url1">URL</label>
+    <input type="url" name="url1" id="url1"><br><br>
+    <hr>
+
+    <!-----------------------------------------------------------------------------------  -->
+
+    <h2>Input de seleccion multiple</h2>
+    <input type="checkbox" name="sad" id="sad" value="chipas">
+    <label for="sad">chipas de chocolate</label><br>
+    <input type="checkbox" name="sad1" id="sad1" value="nuez">
+    <label for="sad1">Nuez</label><br>
+    <input type="checkbox" name="sad2" id="sad2" value="fresa">
+    <label for="sad2">Fresa</label><br><br>
+    <hr>
+
+    <!-- -------------------------------------------------------------------------------- -->
+
+    <h2>Input de seleccion Unica</h2>
+    <input type="radio" name="roja" id="salsa" value="roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" name="verde" id="salsa" value="verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" name="guacamole" id="salsa" value="guacamole">
+    <label for="guacamole">Guacamole</label><br><br><br>
+    <hr>
+
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <h2>Seleccion</h2>
+    <label for="tacos">De que la orden</label>
+    <select name="tacos" id="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="asada">Asada</option>
+        <option value="pastor">Pastor</option>
+    </select>
+    <h2>seleccion input avanzado</h2>
+    <label for="refresco">Elige el refresco</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-cola">
+        <option value="Fanta">
+        <option value="Naranja">
+    </datalist>
+    <br><br><br>
+    <hr>
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <h2>Fechas</h2>
+    <input type="date" name="fecha1" id="fecha1"><br>
+    <input type="datetime-local" name="fecha2" id="fecha2"><br>
+    <input type="week" name="fecha3" id="fecha3"><br>
+    <input type="month" name="fecha4" id="fecha4"><br>
+    <input type="time" name="fecha5" id="fecha5">
+    <br><br>
+    <hr>
+
+    <!-- ----------------------------------------------------------------------------- -->
+
+    <h2>archivo</h2>
+    <input type="file" name="archivo" id="archivo"><br>
+    
+    <h2>Color</h2>
+    <input type="color" name="color1" id="color1"><br>
+
+    <h2>Rango</h2>
+    <label for="vol">Volumen (0-10)</label><br>
+    <input type="range" name="vol" id="vol" min="0" max="10" value="2">
+    <br><br>
+    <hr>
+
+    <!-- ---------------------------------------------------------------------------- -->
+
+    <h2>Boton</h2>
+    <input type="reset" value="restablece"><br>
+    <input type="submit" value="enviar"><br>
+    <input type="button"id="boton" name="boton" value="boton1" onclick="alert('Bienvenido');"><br><br>
+    <hr>
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <h2>Formularios</h2>
+
+    <form action="" id="form1" method="post">
+        <label for="nombre">nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <input type="reset">
+        <input type="submit" value="submit">
+    </form> <br>
+
+    <!-- Tener un input fuerma del formulario podemos referenciarlo para que sea igual a los inpunt 
+        que esta dentro del form -->
+    <label for="apellido">Apellido</label><br>
+    <input type="text" id="apellido" name="apellido" form="form1">
+</body>
+</html>

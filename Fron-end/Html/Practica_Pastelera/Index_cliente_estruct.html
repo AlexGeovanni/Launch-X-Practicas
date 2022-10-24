@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria X</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <div>
+                <img src="./img/Logo.png" alt="">
+                <h1>Pasteleria X</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#Sabore">Sabores</a></li>
+                    <li><a href="#formulario">Pedido</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <section class="Inicio">
+            <div>
+                <h1>Pasteleria X</h1>
+                <h2>desde 2022</h2>
+                <div class="buton">
+                    <a href="#formulario">
+                        <p>Realiza tu pedido aqui!</p>
+                    </a>
+                </div>
+            </div>
+            <img src="./img/Logo_paste.png" alt="">
+        </section>
+        <section class="Sabores" id="Sabore">
+            <h2>Sabores de pastel</h2>
+            <div class="sabor extra">
+                <div class="chocolate">
+                    <div class="imgenes">
+                        <img src="./img/Sabores/Chocolate.jpg" alt="">
+                        <a href="#formulario">
+                            <p>Pedir</p>
+                        </a>
+                        <div id="titulo" class="titulo">
+                            <h3>CHOCOLATE</h3>
+                            <p>$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vainilla">
+                    <div class="imgenes">
+                        <img src="./img/Sabores/Vainilla.jpg" alt="">
+                        <a href="#formulario">
+                            <p>Pedir</p>
+                        </a>
+                        <div class="titulo">
+                            <h3>VAINILLA</h3>
+                            <p>$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="zanahoria">
+                    <div class="imgenes">
+                        <img src="./img/Sabores/Zanahoria.jpg" alt="">
+                        <a href="#formulario">
+                            <p>Pedir</p>
+                        </a>
+                        <div class="titulo">
+                            <h3>ZANAHORIA</h3>
+                            <p>$300</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tresleche">
+                    <div class="imgenes">
+                        <img src="./img/Sabores/Tres_leche.jpg" alt="">
+                        <a href="#formulario">
+                            <p>Pedir</p>
+                        </a>
+                        <div class="titulo">
+                            <h3>TRES LECHE</h3>
+                            <p>$300</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Decoraciones que puedes agregarle</h2>
+            <div class="decoracion extra">
+                <div class="imgenes">
+                    <img src="./img/Decoraciones/D_3d.jpg" alt="">
+                    <div class="titulo">
+                        <h3>3D</h3>
+                        <p>$200</p>
+                    </div>
+                </div>
+                <div class="imgenes">
+                    <img src="./img/Decoraciones/D_Florales.jpg" alt="">
+                    <div class="titulo">
+                        <h3>Florales</h3>
+                        <p>$250</p>
+                    </div>
+                </div>
+                <div class="imgenes">
+                    <img src="./img/Decoraciones/D_Drip_cakes.jpg" alt="">
+                    <div class="titulo">
+                        <h3>Drip cakes</h3>
+                        <p>$200</p>
+                    </div>
+                </div>
+                <div class="imgenes">
+                    <img src="./img/Decoraciones/D_Line_Cakes.jpg" alt="">
+                    <div class="titulo">
+                        <h3>Line Cakes</h3>
+                        <p>$300</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor">
+                <h2>Adornos adicionales</h2>
+                <div class="adorno extra">
+                    <div>
+                        <div>
+                            <img src="./img/Adornos/Feliz.jpg" alt="">
+                        </div>
+                        <h3>Feliz cumpleaños</h3>
+                        <p>$80</p>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="./img/Adornos/Flores.jpg" alt="">
+                        </div>
+                        <h3>Flores</h3>
+                        <p>$100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="formulario" id="formulario">
+
+            <form action="">
+                <h1>Realiza tu pedido</h1>
+                <div class="datos">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Numero de telefono">
+
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Correo Electronico">
+                </div>
+                <div class="formpedido">
+                    <div>
+                        <p>¿Que sabor de pastel?</p>
+                        <select name="sabores" id="sabores">
+                            <option value="chocolate"> CHOCOLATE</option>
+                            <option value="vainilla"> VAINILLA</option>
+                            <option value="zanahoria"> ZANAHORIA</option>
+                            <option value="tresLeche"> TRES LECHE</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Selecciona la decoracion del pastel</p>
+                        <select name="adornos" id="adornos">
+                            <option value="ninguno"> NINGUNO</option>
+                            <option value="3d"> 3D</option>
+                            <option value="vainilla">FLORALES</option>
+                            <option value="drip">DRIP CAKES</option>
+                            <option value="line">LINE CAKES</option>
+                        </select>
+                    </div>
+
+                    <div class="adornos">
+                        <p>Adorno adicional</p>
+                        <select name="adornos" id="adornos">
+                            <option value="ninguno"> NINGUNO</option>
+                            <option value="feliz">FELIZ CUMPLEAÑOS</option>
+                            <option value="flores">FLORES</option>
+                        </select>
+                    </div>
+                    
+                    <textarea name="descripcion" id="" cols="30" rows="10" placeholder="Descripcion adicional"></textarea>
+                </div>
+                <button>ENVIAR</button>
+                <input type="reset" value="cancelar" class="cancelar"></input>
+            </form>
+        </section>
+    <footer id="foter">
+        <div>
+            <h1>Pasteleria X</h1>
+            <div>
+                <h2>Ubicacion</h2>
+                <p>Calle</p>
+                <p>codigo postal</p>
+                <p>Estados</p>
+            </div>
+            <div class="redes">
+                <h2>Siguenos</h2>
+            </div>
+        </div>
+        <p>
+            &copy; Pasteleria X - Alex Geovanni 
+        </p>
+    </footer>
+</body>
+</html>

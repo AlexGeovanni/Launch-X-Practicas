@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos el jefe</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Tacos el Jefe, desde 2022</h1>
+    </nav>
+    <img src="./Tacos El Jefe.png" alt="tacos el jefe">
+
+    <section id="Menu">
+        <h2>menu</h2>
+
+        <h3>Tacos grandes</h3>
+        <p>Todos incluyen cebolla asada y nopales</p>
+        <ul>
+            <li>Chorizo ....................$35</li>
+            <li>Asada ....................$35</li>
+            <li>Alpastor ....................$35</li>
+            <li>Carne molida ....................$35</li>
+            <li>champiñones ....................$35</li>
+        </ul>
+        <h3>Tacos pequeños</h3>
+        <ul>
+            <li>Chorizo ....................$20</li>
+            <li>Asada ....................$20</li>
+            <li>Alpastor ....................$20</li>
+            <li>Carne molida ....................$20</li>
+            <li>Nopal ....................$20</li>
+        </ul>
+        <h3>Tacos especiales</h3>
+        <dl>
+            <dt><b>Pastor Aleman</b> ............. 70</dt>
+            <dd>- Tortilla de máiz con carne asada y queso derretido</dd>
+            <dt><b>Pitbull</b> ............. 70</dt>
+            <dd>- Tortilla de máiz con carne asada y chorizo</dd>
+            <dt><b>Pug</b> ............. 70</dt>
+            <dd>- Tortilla de máiz alpastor y nopales con quesillo</dd>
+            <dt><b>callejero</b> ............. 70</dt>
+            <dd>- Tortilla de máiz con carne asada, alpastor y queso derretido</dd>
+        </dl>
+    </section>
+
+    <hr>
+    <section>
+        <h2>Ubicacion </h2>
+        <h4>sucursales</h4>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicacion </th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td><a href="#" target="_blank">Ubicacion del centro</a></td>
+                <td>L-V 9:00am- 11:00pm</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td><a href="#" target="_blank">Ubicacion del Sur</a></td>
+                <td>L-V 8:00am- 10:00pm</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td><a href="#" target="_blank">Ubicacion del Norte</a></td>
+                <td>L-V 11:00am- 12:00am</td>
+            </tr>
+        </table>
+    </section>
+
+    <h2>Pedidos</h2>
+    <h3>Haz tu pedido aqui</h3>
+    <p>De que taquerias quieres</p>
+
+    <section>
+        <form action="" method="post">
+            <select name="" id="">
+                <option value="centro">Centro</option>
+                <option value="sur">Sur</option>
+                <option value="norte">Norte</option>
+            </select><br>
+
+            <p>¿Tacos especiales Elige?</p>
+            <select name="" id="">
+                <option value="Aleman">Pastor Aleman</option>
+                <option value="Pitbull">Pitbull</option>
+                <option value="Pug">Pug </option>
+                <option value="callejero ">callejero  </option>
+            </select><br><br>
+
+            <p>¿De que tacos quieres?</p>
+            <select name="" id="">
+                <option value="centro">Tacos pequeños</option>
+                <option value="sur">Tacos grandes</option>
+            </select><br><br>
+
+            <input type="checkbox" id="alpastor" value="Alpastor">
+            <label for="alpastor">Alpastor</label>
+            <input type="number" min="0" max="1000" id="alpastor"><br><br>
+
+            <input type="checkbox" id="chorizo" value="chorizo">
+            <label for="chorizo">Chorizo </label>
+            <input type="number" min="0" max="1000" id="chorizo"><br><br>
+
+            <input type="checkbox" id="molida" value="molida">
+            <label for="molida">Carne molida</label>
+            <input type="number" min="0" max="1000" id="molida"><br><br>
+
+            <input type="checkbox" id="nopal" value="nopal">
+            <label for="nopal">Nopal </label>
+            <input type="number" min="0" max="1000" id="nopal">
+            <br><br><br> 
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre"><br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" name="numero" id="numero" placeholder="Tu telefono"><br>
+            <label for="direccion">Direccion</label>
+            <input type="text" name="direccion" id="direccion" placeholder="Ingrese tu direccion"><br><br>
+
+            <input type="button" value="Enviar pedido">
+        </form>
+    </section>
+</body>
+
+</html>
