@@ -10,3 +10,7 @@
 
 
 ## [Mi pagina despliegue](https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/css/index.html)
+
+- Utilice Css (Grid y FlexBox)
+- Transición con el :hover
+- Puro Html y Css 
