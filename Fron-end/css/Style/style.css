@@ -134,7 +134,7 @@ li a:hover{
     flex-direction: row;
     height: 170px;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 25px;
     gap: 10px;
 }
 
