@@ -7,3 +7,10 @@
 ### Bonus:
 - Bonus de diseños o páginas adicionales (Totalmente a tu creatividad)
 - Bonus de despliegue de la página 
+
+
+## [Mi pagina despliegue](https://alexgeovanni.github.io/Launch-X-Practicas/Fron-end/css/index.html)
+
+- Utilice Css (Grid y FlexBox)
+- Transición con el :hover
+- Puro Html y Css 
