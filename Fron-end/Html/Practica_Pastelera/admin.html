@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleAdmi.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="encabezado">
+            <div>
+                <img src="./img/Logo.png" alt="">
+                <h1>Pasteleria X</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="./Index_admi.html">Inicio</a></li>
+                    <li><a href="./admin.html">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <section class="Inicio_adm">
+        <h1>Aministación de la Pasteleria X</h1>
+        <div class="nav">
+            <ul>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#decoraciones">Decoraciones</a></li>
+                <li><a href="#adornos">Adornos</a></li>
+            </ul>
+        </div>
+        <div class="pedido">
+            <table>
+                <thead>
+                <tr>
+                    <th><p>No° Pedido</p></th>
+                    <th><p>Nombre Completo</p> </th>
+                    <th><p>Sabor de pastel</p></th>
+                    <th><p>Combinada</p></th>
+                    <th><p>Decoraciones</p></th>
+                    <th><p>Adorno adicional</p></th>
+                    <th><p>Precio</p></th>
+                    <th><p>cantidad</p></th>
+                    <th><p>estatus</p></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><p>0001</p></td>
+                    <td><p>Javer Hernandez</p></td>
+                    <td><p>zanahoria</p></td>
+                    <td><p>No</p></td>
+                    <td><p>Drip cakes</p></td>
+                    <td><p>No</p></td>
+                    <td><p>$500</p></td>
+                    <td><p>1</p></td>
+                    <td><p>entregado</p></td>
+                </tr>
+                <tr>
+                    <td><p>00002</p></td>
+                    <td><p>Juan Pablo Garcia</p></td>
+                    <td><p>chocolate</p></td>
+                    <td><p>Vainilla</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>$400</p></td>
+                    <td><p>1</p></td>
+                    <td><p>Hecho</p></td>
+                </tr>
+                <tr>
+                    <td><p>00003</p></td>
+                    <td><p>Alejandro Alvaro Aguilar</p></td>
+                    <td><p>zanahoria</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>$300</p></td>
+                    <td><p>2</p></td>
+                    <td><p>pendiente</p></td>
+                </tr>
+                <tr>
+                    <td><p>00004</p></td>
+                    <td><p>Aguistin Castro</p></td>
+                    <td><p>vainilla</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>Feliz cumpleaños</p></td>
+                    <td><p>$300</p></td>
+                    <td><p>1</p></td>
+                    <td><p>pendiente</p></td>
+                </tr>
+                <tr>
+                    <td><p>00005</p></td>
+                    <td><p>Graciela Guara</p></td>
+                    <td><p>chocolate</p></td>
+                    <td><p>zanahoria</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>$400</p></td>
+                    <td><p>1</p></td>
+                    <td><p>pendiente</p></td>
+                </tr>
+                <tr>
+                    <td><p>00006</p></td>
+                    <td><p>Aguistin Castro</p></td>
+                    <td><p>vainilla</p></td>
+                    <td><p>zanahoria</p></td>
+                    <td><p>No</p></td>
+                    <td><p>No</p></td>
+                    <td><p>$400</p></td>
+                    <td><p>1</p></td>
+                    <td><p>pendiente</p></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <div id="sabores" class="contenido">
+            <h2>Cantidad de sabores disponibles</h2>
+            <div class="contenedor-main">
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/chocolate.jpg" alt="">     
+                    </div>  
+                    <h2>CHOCOLATE</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="10">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="2">
+                </div>
+
+                <div class="contenedor">
+                    <div class="imagen">
+                        <img src="./img/vainilla.jpg" alt="">     
+                    </div>  
+                    <h2>VAINILLA</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="9">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="3">
+                </div>
+
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/zanahoria.jpg" alt="">     
+                    </div>  
+                    <h2>ZANAHORIA</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="9">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="4">
+                </div>
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/tres_leche.jpg" alt="">     
+                    </div>  
+                    <h2>TRES LECHE</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                                         
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="12">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="0">
+                </div>
+            </div>
+        </div>
+        <div id="decoraciones" class="contenido">
+            <h2>Cantidad de decoraciones disponibles</h2>
+            <div class="contenedor-main">
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/Decoraciones/D_3d.jpg" alt="">     
+                    </div>  
+                    <h2>3D</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="6">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="0">
+                </div>
+
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/Decoraciones/D_Florales.jpg" alt="">     
+                    </div>  
+                    <h2>FLORALES</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="5">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="0">
+                </div>
+
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/Decoraciones/D_Drip_cakes.jpg" alt="">     
+                    </div>  
+                    <h2>DRIP CAKES</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="3">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="1">
+                </div>
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/Decoraciones/D_Line_Cakes.jpg" alt="">     
+                    </div>  
+                    <h2>LINE CAKES</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                                         
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="2">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="0">
+                </div>
+            </div>
+        </div>
+        <div id="adornos" class="contenido">
+            <h2>Cantidad de adornos disponibles</h2>
+            <div class="contenedor-main">
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./imG/Adornos/Feliz.jpg" alt="">     
+                    </div>  
+                    <h2>FELIZ CUMPLEAÑOS</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="4">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="1">
+                </div>
+
+                <div class="contenedor ">
+                    <div class="imagen">
+                        <img src="./img/Adornos/Flores.jpg" alt="">     
+                    </div>  
+                    <h2>FLORES</h2>
+                    <label for="cantidad">Disponibles</label>
+                    <div>                        
+                        <input type="button" value="-" class="min-max">
+                        <input type="text" name="cantidad" id="cantidad" class="cantidad" value="2">
+                        <input type="button" value="+" class="min-max">
+                    </div>
+                    <label for="vendidos">Vendidos:</label>
+                    <input type="text" class="vendidos" name="vendidos" id="vendidos" value="0">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer id="foter">
+        <div>
+            <h1>Pasteleria X</h1>
+            <div>
+                <h2>Ubicacion</h2>
+                <p>Calle</p>
+                <p>codigo postal</p>
+                <p>Estados</p>
+            </div>
+            <div class="redes">
+                <h2>Siguenos</h2>
+                <ul>
+                    <li><a href="" target="_blank">Facebbok</a></li>
+                    <li><a href="" target="_blank">Twitter</a> </li>
+                    <li><a href="" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            &copy; Pasteleria X - Alex Geovanni
+        </p>
+    </footer>
+</body>
+
+</html>

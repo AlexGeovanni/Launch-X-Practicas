@@ -1,7 +1,7 @@
 
 :root{
     scroll-behavior:smooth;
-    scroll-padding:80px;
+    scroll-padding:75px;
 }
 *{
     padding: 0;
@@ -91,27 +91,28 @@ ul li:hover{
 
 .Inicio>div a p{
     font-size: calc(1.2rem*1.2);
+    width: 70%;
     margin: auto;
+    background-color: #ffff;
     border-radius: 100px;
     padding: 20px 0;
-    color: #000;
+    color: #763dfc;
+    transition: background-color .6s ease-out ;
 }
 .Inicio>div a{
     text-decoration: none;
     font-weight: 600;
 }
-
+.Inicio>div p:hover{
+    background-color: #000;
+    color: #ffff;
+}
 .buton{
     animation-name: mover;
     animation-duration: .7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 5;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
-    background-color: #ffff;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 100px;
-    transition: background-color .6s ease-out ;
 }
 @keyframes mover {
     0%{
@@ -124,12 +125,8 @@ ul li:hover{
 .buton:hover{
     animation:none;
     transition: animation .7s ease;
-    background-color: #000;
-    transition: background-color .6s ease-out ;
 }
-.buton:hover>a p{
-    color: #ffff;
-}
+
 
 
 
@@ -161,13 +158,13 @@ ul li:hover{
     position: relative;
     overflow: hidden;
 }
-.extra div  h3{
+.extra div .titulo h3{
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     margin-top: 50px;
 }
-.extra div p{
+.extra div .titulo p{
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
@@ -191,15 +188,35 @@ ul li:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
-.sabor .imgenes a{
+
+
+.sabor .imgenes .ingre{
     position: absolute;
     margin: auto;
-    text-decoration: none;
     opacity: 0;
-    transition:opacity .3s ease-out ;
-    pointer-events: auto;
+    transition:opacity .5s ease-out ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.sabor .imgenes a p{
+.sabor .imgenes .ingre h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+}
+.sabor .imgenes .ingre>p{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.sabor .imgenes a{
+    text-decoration: none;
+    pointer-events: auto;
+    text-align: center;
+}
+
+.sabor .imgenes .ingre a p{
     color: #000;
     background-color: #eeeeee;
     padding:8px 28px;
@@ -207,6 +224,8 @@ ul li:hover{
     font-size: calc(1.2rem*1.2);
     font-weight: 700;
 }
+
+
 .extra .titulo{
     width: 100%;
     height: 100%;
@@ -217,7 +236,7 @@ ul li:hover{
     transition:opacity 2s ease-out ;
 }
 
-.sabor .imgenes:hover>a{
+.sabor .imgenes:hover>.ingre{
     opacity: 1;
     transition:opacity .9s ease-out ;
     z-index: 1;
@@ -244,7 +263,7 @@ ul li:hover{
 .adorno{
     width: 55%;
 }
-.adorno div div{
+.adorno .imgenes {
     height: 280px;
     overflow: hidden;
     border-radius: 10px;
@@ -255,9 +274,6 @@ ul li:hover{
 
 
 /* Esta parte ocultamos los adornos */
-.contenedor, .adornos{
-    display: none;
-}
 
 
 
@@ -289,15 +305,14 @@ form {
 }
 form>div{
     width: 100%;
-    padding: 18px;
+    padding: 18px
 }
 
-
-form .datos label{
+form .formdatos label{
     margin-left: 20px;
     font-size: calc(1.2rem*1.1);
 }
-form .datos input{
+form .formdatos input{
     width: 100%;
     outline: none;
     border: none;
@@ -306,9 +321,11 @@ form .datos input{
     font-size: 1rem;
     border-radius: 100px;
 }
-form .datos input:focus{
+form .formdatos input:focus{
     background-color: rgba(255, 255, 255, 0.9);
 }
+
+/* Form de pedidos -------------------------------- */
 
 form .formpedido{
     display: flex;
@@ -318,12 +335,13 @@ form .formpedido{
 }
 form .formpedido div{
     width: 290px;
+    margin-bottom: 15px;
 }
 form .formpedido p{
     font-size: calc(1.2rem*1.1);
 }
 form .formpedido select{
-    padding: 16px 30px;
+    padding: 15px 30px;
     border: none;
     border-radius: 100px;
     font-size: .9rem;
@@ -331,8 +349,8 @@ form .formpedido select{
     background-color: #ffff;
 }
 textarea{
-    width: 100%;
-    height: 150px;
+    width: 90%;
+    height: 120px;
     border-radius: 10px;
     padding: 5px 15px;
 }
@@ -370,6 +388,29 @@ footer>div{
     display: flex;
     justify-content: space-evenly;
     padding: 30px 0;
+}
+footer .redes  h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer .redes ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding: 0 20px;
+}
+footer .redes ul a{
+    cursor: pointer;
+    padding: 5px 0;
+    border-bottom:2px solid ;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+footer .redes ul a:hover{
+    border-bottom:none;
+    color: #ffff;
 }
 footer>p{
     border-top: 1px solid;

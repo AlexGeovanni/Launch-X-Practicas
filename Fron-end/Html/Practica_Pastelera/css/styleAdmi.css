@@ -1,0 +1,132 @@
+
+.Inicio_adm{
+    padding-top: 100px;
+}
+.Inicio_adm h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+}
+.Inicio_adm .contenido{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.Inicio_adm .nav{
+    width:450px;
+    background-color: rgb(228, 127, 231);
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px 0;
+}
+
+.Inicio_adm .nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.Inicio_adm .nav ul li{
+    list-style: none;
+    border: 1px solid #ffff;
+}
+.Inicio_adm .nav ul a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: 1px solid #ffff;
+    padding:0 20px;
+}
+/* Tabla de pedidos  */
+.pedido {
+    margin: 50px 0 80px 0;
+}
+table{
+    width: 90%;
+    margin: auto;
+}
+table thead th{
+    padding: 10px;
+}
+table tbody td{
+    padding: 12px;
+}
+table,th,td{
+    border: 2px solid rgba(0, 0, 0,.3);
+    border-collapse: collapse;
+}
+
+td p{
+    text-align: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+/* Sabores dispnibles */
+.contenido .contenedor-main{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+.contenido>h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.contenedor-main>div {
+    padding: 10px;
+    border: 2px solid black;
+}
+.contenedor-main .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-main .contenedor .imagen{
+    overflow: hidden;
+}
+.contenedor-main .contenedor .imagen img{
+    width: 230px;
+    height: 210px;
+    transition: transform .2s ease-in-out;
+}
+.contenedor-main .contenedor .imagen img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+.contenedor-main .contenedor div {
+    margin: 5px 0 10px 0;
+}
+.contenedor-main .contenedor div .min-max{
+    padding: 5px 12px; 
+    border: none;
+    border: 2px solid rgba(0, 0, 0, 0.555);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.contenedor-main .contenedor div .min-max:hover{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.contenedor-main .contenedor  .cantidad,
+.contenedor-main .contenedor  .vendidos{
+    padding: 5px 2px;
+    width: 35px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: rgb(158, 157, 157);
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+.contenedor-main .contenedor  .vendidos{
+    border-radius: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-bottom:2px solid #000 ;
+    font-weight: 600;
+}
